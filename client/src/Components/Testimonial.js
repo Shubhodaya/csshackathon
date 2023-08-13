@@ -8,7 +8,7 @@ const Testimonial = () => {
     <div className="work-section-wrapper">
       <div className="work-section-top">
         <p className="primary-subheading">Register</p>
-        <h1 className="primary-heading">What They Are Saying</h1>
+        <h1 className="primary-heading">Are You Ready ?</h1>
         <p className="primary-text">
         Ready to hack your way to innovation? 
         Fill out the registration form below and secure your spot in the NIT Dgp Hackathon.

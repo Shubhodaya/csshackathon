@@ -449,7 +449,7 @@ nav {
     text-align: center;
   }
   .footer-wrapper {
-    flex-direction: column;
+    flex-direction: row;
   }
   .footer-section-two {
     flex-direction: column;
@@ -465,10 +465,18 @@ nav {
 @media (max-width: 600px) {
   .home-bannerImage-container{
     max-width: 420px;
+    left: 100px;
   }
   .about-background-image-container {
-    left: -170px;
-    top: -300px;
+    display: none;
+    left: -200px;
+    top: -350px;
     scale: 0.8;
+  }
+  .info-boxes-img-container{
+    scale: 0.8;
+  }
+  .work-section-info {
+    min-height: 50px;
   }
 }

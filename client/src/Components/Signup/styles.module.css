@@ -149,6 +149,9 @@
   }
 
 @media (max-width: 600px) {
+	.right{
+		width: 100%;
+	}
 	.signup_container {
 		width: 85vw;
 
@@ -170,6 +173,6 @@
 	   box-shadow: 0 0 25px 7.5px #48abe0;
    }
    .green_btn{
-	scale:0.9;
+	scale:1.06;
    }
   }
