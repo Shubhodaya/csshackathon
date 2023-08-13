@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import axios from "axios";
 
 import styles from "./styles.module.css";
@@ -22,10 +22,36 @@ const Signup = () => {
 		setData({ ...data, [input.name]: input.value });
 	};
 
+	useEffect(() => {
+		if (error !== "" ) {
+		  // Set a timeout to clear the error after 5 seconds
+		  const timeoutId = setTimeout(() => {
+			setError("");
+			
+		  }, 5000);
+		  return () => {
+			clearTimeout(timeoutId);
+		  };
+		}
+	  }, [error]);
+
+	  useEffect(() => {
+		if (success !== "") {
+		  // Set a timeout to clear the error after 5 seconds
+		  const timeoutId = setTimeout(() => {
+			
+			setSuccess("");
+		  }, 5000);
+		  return () => {
+			clearTimeout(timeoutId);
+		  };
+		}
+	  }, [success]);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:8080/api/users";
+			const url = "https://csshackathonbackend.onrender.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			setSuccess(res.message);
 			
