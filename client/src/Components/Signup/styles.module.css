@@ -101,6 +101,9 @@
 	
 }
 @media (max-width: 1000px) {
+	.green_btn{
+		scale:1;
+	}
 	.signup_container {
 		width: 85vw;
 
@@ -156,7 +159,7 @@
 	}
 	.input {
 	
-		width: 220px;
+		width: 250px;
 		padding: 15px;
 		border-radius: 10px;
 		background-color: #edf5f3;
@@ -165,5 +168,8 @@
 	}
 	.signup_form_container {
 	   box-shadow: 0 0 25px 7.5px #48abe0;
+   }
+   .green_btn{
+	scale:0.9;
    }
   }
